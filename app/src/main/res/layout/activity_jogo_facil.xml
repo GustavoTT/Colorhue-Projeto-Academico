@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".jogoFacil">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivSorteioF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinza"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnAzulF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmareloF"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/azul"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnAmareloF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/amarelo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnVermelhoF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoxoF"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/vermelho"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnRoxoF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/roxo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnComecarF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FF57DD03"
+        android:onClick="startGame"
+        android:text="COMEÇAR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSorteioF" />
+
+    <TextView
+        android:id="@+id/tvTextoF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Clique no botão para começar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComecarF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LAYOUT PERSONALIZADO PARA O RANKING -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="1dp"
+    android:backgroundTint="@color/cinza"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Jogador: "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvJogador"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Gustavo"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Dificuldade: "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvDificuldade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Fácil"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@android:drawable/divider_horizontal_dim_dark"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Pontos: "
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvPontuacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="300"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

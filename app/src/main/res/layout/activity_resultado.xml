@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".resultado">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="325dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/tvDificuldade"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Dificuldade Jogada:"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="#51B7C9"
+        android:foreground="@drawable/bgcolorido"
+        android:foregroundGravity="center"
+        android:layerType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Colorhue"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="52dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvErros" />
+
+    <TextView
+        android:id="@+id/tvAcertos"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Acertos:"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDificuldade" />
+
+    <TextView
+        android:id="@+id/tvErros"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Erros:"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAcertos" />
+
+    <TextView
+        android:id="@+id/tvPontuacao"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Resultado do Jogo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Obrigado por jogar!"
+        android:textColor="#6A6A6A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvar" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#55D803"
+        android:text="VOLTAR AO MENU"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

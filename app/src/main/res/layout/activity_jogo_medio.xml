@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".jogoMedio"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="11dp">
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnAmareloM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerdeM"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/btnAzulM"
+        app:srcCompat="@drawable/amarelo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnVermelhoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/blank"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:srcCompat="@drawable/vermelho"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnAzulM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/blank"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:srcCompat="@drawable/azul"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnRoxoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toTopOf="@+id/btnLaranjaM"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/btnVermelhoM"
+        app:srcCompat="@drawable/roxo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnVerdeM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:srcCompat="@drawable/verde"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnLaranjaM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/blank"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:srcCompat="@drawable/laranja"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnComecarM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FF57DD03"
+        android:onClick="startGame"
+        android:text="COMEÇAR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSorteioM" />
+
+    <TextView
+        android:id="@+id/tvTextoM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Clique no botão para começar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComecarM" />
+
+    <ImageView
+        android:id="@+id/ivSorteioM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

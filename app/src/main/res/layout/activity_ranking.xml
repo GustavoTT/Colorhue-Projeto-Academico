@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".ranking">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="132dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Colorhue"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:foreground="@drawable/bgcolorido"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="325dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="12dp"
+        android:background="#474646"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <Button
+        android:id="@+id/btnVoltarR"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#474646"
+        android:text="VOLTAR"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ranking de Pontos"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRanking"
+        android:layout_width="325dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/view9"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toTopOf="@+id/view9"
+        tools:listitem="@layout/player_item" />  <!-- Altera o estilo da RecyclerView para o estilo personalizado desenvolvido -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
