@@ -2,7 +2,7 @@
 > Projeto desenvolvido em grupo com fins acadêmicos, desenvolvido perante demanda para a matéria de Dispositivos Móveis na Fatec Americana.
 
 ## Informações do projeto
-Para fins avaliativos foi solicitado um projeto em grupo para entrega na matéria de disopositivos móveis de tema livre/aberto e que tivesse uma integração com banco de dados, no caso o Firebase. Após um debate com o grupo, decidimos que seria mais didático realizarmos a criação de um jogo no momento. Dentre as opções debatidas, escolhemos usar como inspiração o Jogo Genius (jogo de memorização de sequências de cores) para desenvolver nosso projeto.
+Para fins avaliativos foi solicitado um projeto em grupo para entrega na matéria de dispositivos móveis de tema livre/aberto e que tivesse uma integração com banco de dados, no caso o Firebase. Após um debate com o grupo, decidimos que seria mais didático realizarmos a criação de um jogo no momento. Dentre as opções debatidas, escolhemos usar como inspiração o Jogo Genius (jogo de memorização de sequências de cores) para desenvolver nosso projeto.
 Diante disso, desenvolvemos pelo Android Studio com Kotlin e integração ao Google Firebase, uma aplicação que:
 - Recebe a dificuldade escolhida pelo jogador
 - Gera, de acordo com o nível de dificuldade, sequências aleatórias de cores
